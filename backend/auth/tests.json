@@ -1,0 +1,18 @@
+{
+  "tests": [
+    {
+      "name": "Register user",
+      "method": "POST",
+      "path": "/?action=register",
+      "body": {"username": "testwtf999", "email": "testwtf999@wtf.com", "password": "password123"},
+      "expectedStatus": 201
+    },
+    {
+      "name": "Login user",
+      "method": "POST",
+      "path": "/?action=login",
+      "body": {"email": "testwtf999@wtf.com", "password": "password123"},
+      "expectedStatus": 200
+    }
+  ]
+}
