@@ -14,11 +14,11 @@ export function LandingPage() {
 
   const [targetDate, setTargetDate] = useState<Date>(() => {
     const date = new Date()
-    date.setDate(date.getDate() + 7)
+    date.setDate(date.getDate() + 3)
     return date
   })
 
-  const [days, setDays] = useState("7")
+  const [days, setDays] = useState("3")
   const [hours, setHours] = useState("0")
   const [minutes, setMinutes] = useState("0")
   const [seconds, setSeconds] = useState("0")
